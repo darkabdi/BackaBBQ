@@ -11,7 +11,7 @@ const products = [
 
 export default function Shop() {
   return (
-    <section id="shop" className="px-6 py-16 bg-white">
+    <section id="shop" className="px-6 py-16">
       <h3 className="text-3xl font-semibold text-center mb-10">Our Products</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((item) => (

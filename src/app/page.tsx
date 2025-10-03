@@ -2,6 +2,7 @@ import Hero from '../app/Components/Hero'
 import Shop from '../app/Components/Shop'
 import About from '../app/Components/About'
 import Contact from '../app/Components/Contact'
+import Paralax from './Components/Paralax'
 
 
 export default function HomePage() {
