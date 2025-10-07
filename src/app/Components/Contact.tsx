@@ -12,13 +12,13 @@ export default function Contact() {
       <p className="text-lg text-gray-700 mb-6">
         Questions, bulk orders, or special requests? Reach out to us!
       </p>
-     <a
-      href="mailto:info@spicehaven.se"
-      className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-yellow-700 transition 
-             w-1/2 mx-auto md:mx-0 md:self-center"
-      >
-      Email Us
-        </a>
+    <a
+  href="mailto:info@spicehaven.se"
+  className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-yellow-700 transition
+             w-1/2 mx-auto md:mx-0 md:self-start"
+>
+  Email Us
+</a>
       </div>
      
     </section>
