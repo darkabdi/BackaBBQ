@@ -62,10 +62,23 @@ export default function Hero() {
   ></section>
 </div>
 
- <section
-   className="h-screen bg-center bg-cover bg-fixed"
-   style={{backgroundImage:"url('/AllSpices.jpg')"}}
-  ></section>
+ <section className="relative h-64 sm:h-80 md:h-screen overflow-hidden">
+  {/* Static image for mobile */}
+  <img
+    src="/AllSpices.jpg"
+    alt="All Spices"
+    className="absolute inset-0 w-full h-full object-cover md:hidden"
+  />
+
+  {/* Parallax background for desktop */}
+  <div
+    className="hidden md:block h-screen bg-center bg-cover bg-fixed"
+    style={{ backgroundImage: "url('/AllSpices.jpg')" }}
+  ></div>
+
+  {/* Optional overlay or content */}
+  <div className="absolute inset-0 bg-black/30 md:bg-transparent"></div>
+</section>
 </>
 
   )
