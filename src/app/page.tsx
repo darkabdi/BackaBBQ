@@ -3,6 +3,7 @@ import Shop from '../app/Components/Shop'
 import About from '../app/Components/About'
 import Contact from '../app/Components/Contact'
 import Paralax from './Components/Paralax'
+import DynamicShop from './Components/DynamicShop'
 
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
      
       <Hero />
       <Shop />
+      <DynamicShop/>
       <About />
       <Contact />
     </main>
