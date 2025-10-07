@@ -2,8 +2,9 @@ import Hero from '../app/Components/Hero'
 import Shop from '../app/Components/Shop'
 import About from '../app/Components/About'
 import Contact from '../app/Components/Contact'
-import Paralax from './Components/Paralax'
+import Paralax from './Components/Parallax'
 import DynamicShop from './Components/DynamicShop'
+import Parallax from './Components/Parallax'
 
 
 export default function HomePage() {
@@ -18,6 +19,15 @@ export default function HomePage() {
     <main className="flex flex-col bg-gradient-to-b from-slate-900 via-red-900 to-amber-500">
      
       <Hero />
+      <div className='mt-0'>
+      <Parallax
+      image='/Allspices.jpg'
+       title="Authentic Spices"
+        subtitle="Experience the finest flavors, sourced with passion and care."
+        height="60vh"
+      />
+      </div>
+
       <Shop />
       <DynamicShop/>
       <About />
