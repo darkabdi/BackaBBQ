@@ -20,7 +20,7 @@ export default async function DynamicShop() {
  
  
    return (
-    <section id="shop" className="px-6 py-16 bg-gray-50">
+    <section id="shop" className="px-6 py-16">
       <h3 className="text-3xl font-semibold text-center mb-10">Our Products</h3>
 
       {products.length === 0 ? (
