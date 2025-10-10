@@ -29,38 +29,38 @@ export default function Parallax({
   }, [])
 
   return (
-    <section
-      className="relative overflow-hidden"
-      style={{ height }}
-    >
-      {/* Background image */}
-      <div
-        ref={bgRef}
-        className="absolute inset-0 will-change-transform transition-transform duration-75 ease-out"
-      >
-        <img
-          src={image}
-          alt={title || 'Parallax background'}
-          className="w-full h-[120%] object-cover"
-        />
-      </div>
+<section
+  className="relative overflow-hidden h-[80vh] sm:h-[90vh] flex items-center justify-center"
+>
+  {/* Background image */}
+  <div
+    ref={bgRef}
+    className="absolute inset-0 will-change-transform transition-transform duration-100 ease-out"
+  >
+    <img
+      src={image}
+      alt={title || 'Parallax background'}
+      className="w-full h-full object-cover object-center"
+    />
+  </div>
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 z-5"></div>
+  {/* Gradient overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
 
-      {/* Overlay content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        {title && (
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-            {title}
-          </h2>
-        )}
-        {subtitle && (
-          <p className="max-w-xl text-lg md:text-xl text-gray-200 drop-shadow-md">
-            {subtitle}
-          </p>
-        )}
-      </div>
-    </section>
+  {/* Overlay content */}
+  <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4">
+    {title && (
+      <h2 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+        {title}
+      </h2>
+    )}
+    {subtitle && (
+      <p className="max-w-xl text-lg md:text-xl text-gray-200 drop-shadow-md">
+        {subtitle}
+      </p>
+    )}
+  </div>
+</section>
+
   )
 }
