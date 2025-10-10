@@ -19,6 +19,7 @@ export default async function DynamicShop() {
       "img": image.asset->url
     }`
   );
+  console.log(products)
 
   return (
     <section
