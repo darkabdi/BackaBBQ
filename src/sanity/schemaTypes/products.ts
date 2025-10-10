@@ -11,9 +11,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'price',
-      title: 'Price',
-      type: 'string',
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      description: 'add a short description of the product',
+      validation: (Rule)=>
+        Rule.max(200).warning('description is too long, limit to 200 characters ')
     }),
     defineField({
       name: 'image',
