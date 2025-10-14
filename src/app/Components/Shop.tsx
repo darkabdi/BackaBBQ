@@ -28,7 +28,7 @@ const products = [
   },
   {
     name: "Black Pepper",
-    img: "/images/blackpepper.jpg",
+    img: "/blackpepper.webp",
     description: "Freshly cracked, bold and aromatic — the heart of good seasoning.",
   },
 ];
