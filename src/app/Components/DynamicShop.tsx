@@ -1,7 +1,8 @@
-export const revalidate = 60; // seconds
+
 
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
+export const revalidate = 60; // seconds
 
 interface Product {
   _id: string;
