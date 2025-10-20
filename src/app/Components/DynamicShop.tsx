@@ -11,6 +11,7 @@ interface Product {
   img: string;
 }
 
+
 export default async function DynamicShop() {
   const products: Product[] = await client.fetch(
     `*[_type == "product"]{
@@ -20,7 +21,6 @@ export default async function DynamicShop() {
       "img": image.asset->url
     }`
   );
-  console.log(products)
 
   return (
     <section

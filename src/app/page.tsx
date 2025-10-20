@@ -5,6 +5,7 @@ import Contact from '../app/Components/Contact'
 import Paralax from './Components/Parallax'
 import DynamicShop from './Components/DynamicShop'
 import Parallax from './Components/Parallax'
+import products from '@/sanity/schemaTypes/products'
 
 
 export default function HomePage() {
