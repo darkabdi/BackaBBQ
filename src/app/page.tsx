@@ -22,7 +22,7 @@ export default function HomePage() {
       <Hero />
       <div className='mt-0'>
       <Parallax
-      image='/AllSpices.jpg'
+      image='/AllSpices.JPG'
        title="Authentic Spices"
         subtitle="Experience the finest flavors, sourced with passion and care."
         height="60vh"
