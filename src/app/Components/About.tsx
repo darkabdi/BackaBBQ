@@ -5,7 +5,7 @@ export default function About() {
   {/* Image Section */}
   <div className="md:w-1/2 flex justify-center">
     <img
-      src="/jos-rub.jpg"
+      src="/jos-rub.JPG"
       alt="Spices"
       className="rounded-3xl w-full max-w-md shadow-lg object-cover"
     />
