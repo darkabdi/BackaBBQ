@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@netlify/next": "^1.4.9",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.10.2",
     "@sanity/webhook": "^4.0.4",
