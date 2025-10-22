@@ -2,5 +2,9 @@
   command = "npm run build"
   publish = ".next"
 
-[[plugins]]
-  package = "@netlify/next"
+
+[functions]
+  node_bundler = "esbuild"
+
+[build.environment]
+  NEXT_TELEMETRY_DISABLED = "1"
